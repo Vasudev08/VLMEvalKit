@@ -133,8 +133,8 @@ Example of expected JSON response format:
 
 """
     EXAMPLE = {
-        "solution": "[Detailed step-by-step explanation]",
-        "short answer": "[Concise Answer]"
+        "solution": "The area of a triangle is (base * height) / 2. Given base=10 and height=5, Area = (10 * 5) / 2 = 25.",
+        "short answer": "25.0"
     }
     TEXT_EXAMPLE = json.dumps(EXAMPLE, indent=4)
 
