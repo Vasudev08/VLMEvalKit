@@ -195,6 +195,8 @@ class OpenAIWrapper(BaseAPI):
         input_msgs = self.prepare_inputs(inputs)
         temperature = kwargs.pop('temperature', self.temperature)
         max_tokens = kwargs.pop('max_tokens', self.max_tokens)
+        kwargs.pop('use_vllm', None)
+        kwargs.pop('use_lmdeploy', None)
 
         # Will send request if use Azure, dk how to use openai client for it
         if self.use_azure:
